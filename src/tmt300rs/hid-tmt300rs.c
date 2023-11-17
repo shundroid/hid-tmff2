@@ -1499,7 +1499,7 @@ static int t300rs_check_firmware(struct t300rs_device_entry *t300rs)
 	}
 
 	/* educated guess */
-	if (fw_response->fw_version < 31 && ret >= 0) {
+	/*if (fw_response->fw_version < 31 && ret >= 0) {
 		hid_err(t300rs->hdev,
 				"firmware version %i is too old, please update.\n",
 				fw_response->fw_version
@@ -1509,7 +1509,7 @@ static int t300rs_check_firmware(struct t300rs_device_entry *t300rs)
 
 		ret = -EINVAL;
 		goto out;
-	}
+	}*/
 
 	/* everything OK */
 	ret = 0;
